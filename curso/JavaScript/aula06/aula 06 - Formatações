@@ -1,0 +1,43 @@
+Tipos Primitivos - Data base
+
+number : números
+    inifinity:
+    NaN:
+
+string: textos
+null:
+boolean: False or True
+undefined:
+object:
+    Array
+function: funções que você pode fazer
+
+
+
+                   FORMAS DE USAR STRING
+ex : var s = suco
+ 
+'Eu estou aprendendo s'      -->  Não faz interpolação (faz parte do texto)
+
+'Eu estou aprendendo' + s    -->  Modo certo 1 
+
+'Eu estou aprendendo ${s}'   -->  Modo certo 2
+
+
+                    ALGUMAS FORMATAÇÕES 
+
+s.length         --> Mostra a quantidade de caracteres tem a string 
+s.toUpperCase()  --> Deixa tudo Maisuculo
+s.toLowerCase()  --> Deixa tudo Miniusulo
+
+                        - NÚMEROS:
+                        
+ex: var n1= 1455.5
+
+>n1.toFixed(2)              --> Mostra com duas casas decimais que no caso 1455.50
+
+>n1.toFixed(2).replace('.' , ',') --> Faz a alteração do ponto para virgula,que ficaria 1455,50
+
+>n1.toLocaleString('pt-BR' , {style: 'currency', currency:'BRL'}) --> Converte tudo par a moeda Real = R$ 1455,50
+>n1.toLocaleString('pt-BR' , {style: 'currency', currency:'USD'}) --> Faz pra dollar
+>n1.toLocaleString('pt-BR' , {style: 'currency', currency:'EUR'}) --> Para Euro

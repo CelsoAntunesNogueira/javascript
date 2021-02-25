@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos </h1>
+    <p>Esse video está hospedado no meu próprio servidor
+    
+    </p>
+    <!--Forma 1 de botar vídeo-->
+    <h2>1</h2>
+    <video src="pato.m4v" width="560" height="315" controls></video>
+
+    <!--Forma 2 mais compativel com mais navegadores-->
+    <h2>2</h2>
+    <video  width="560" height="315" controls>
+        <source src='pato.m4v' type='video/mp4'>
+        <source src="pato.mkv" type='video/mkv'>
+        <source src="pato.mp4" type='video/mp4'>
+        <source src="pato.webm" type="video/webm">
+        <p>Seu navegador não é compativel,deu ruim chefia</p>
+    </video>
+    <h2>Usando video do Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tW9K1e7RQ-8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

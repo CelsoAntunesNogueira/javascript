@@ -1,0 +1,23 @@
+são listas que tem ordem númerica,alfabetica ou romana
+Exemplo
+<ol type="1">                                      
+ <li>item</li>                          
+ <li>item</li>  
+ <li>item</li>
+
+
+
+                            Tipos de ol
+
+ 1 : númerica
+ a : alfabetica em letras minusculas
+ A : alfabetica em letras maiusculas
+ I : romanos em maiusculas
+ i : romanos em minusculas
+ 
+
+
+   *Caso queira começar de algum outro número ou letra em especifico,faça isso:
+
+<ol type="1" start="5" >   a lista vai iniciar a partir do 5
+<ol type="a" start='3' >   a lista vai começar na letra C  (sim,tem que usar numero aqui tambem)

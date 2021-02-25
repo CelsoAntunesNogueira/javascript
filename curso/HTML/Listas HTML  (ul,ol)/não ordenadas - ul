@@ -1,0 +1,13 @@
+As não ordenadas usam simbolos para as listas
+Exemplo:
+<ul type="">
+<li>item</li>
+<li>item</li>
+<li>item</li>
+</ul>
+
+                        Tipos de ul
+square : Faz quadrados
+circle : Faz circulos (bolinha branca com contorno preto)
+disc   : Faz bolinha preta
+

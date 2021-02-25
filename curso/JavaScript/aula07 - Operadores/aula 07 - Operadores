@@ -1,0 +1,86 @@
+Ordem de Precedencias dos operadores 
+
+1º Operadores Aritméticos
+2º Operadores Racional
+3º Operadores Logicos
+
+
+                        Operadores Aritméticos
+
++ : Soma              * : Multiplicação         % : Resto da Divisão 
+- : Subtração         / : Divisão real         ** : Potencia
+
+
+                   Operadores Auto-atribuições
+            
+        è tipo uma atualização de varivel
+EXEMPLO
+ 
+var n = 3
+n = n + 4   (Agora o n = 7)
+n = n - 5   (Agora vale n = 2)
+n -= 1      (você pode tambem fazer desse jeito, e agora n vale 1)
+
+                        Incremento
+
+        Forma de simplificar 
+
+n++                     
+n--    
+++n     Aqui já somo a varivel
+--n     Aqui subtrai
+
+
+                    Operadores Racionais
+
+>  : Maior                                     Os operadores racionais
+<  : Menor                                     usam "True" ou "False"
+>= : Maior ou igual                            para responder
+<= : Menor ou igual
+== : Igual
+!= : Diferente
+===: Identico
+!==: Desigual restrito
+                        Operador Identidade
+        
+
+EXEMPLO:
+
+5 == 5   -- > True
+5 == '5' -- > True tbm Pq esse operador não considera o tipo se é numero ou string se for 'igual' ta valendo
+5 === '5' --> Só nesse caso que daria False porque "===" significa identico
+
+                        Operadores Logicos 
+
+        É tipo os if/elif e else do Python
+
+!  : Negação     (Não)   1º a ser feito
+Ex:Só não quero uma caneta preta (Logo qualquer caneta serve,só ñ pode ser preta)
+
+&& : Conjunção    (e)    2º a ser feito
+EX:Sò quero uma caneta azul e uma vermelha (Aqui tem que ser as canetas azul e vermelha)
+
+|| : Disjunção    (ou)   3º a ser feito
+Ex:Quero uma caneta azul ou verde (Tendo uma caneta azul ou verde pra dar ta sussa)
+
+
+Algumas traduções!!
+
+idade >= 15 && <= 17                //  A idade está entre 15 e 17? 
+estado == 'RJ' || estado == 'SP'   //   O estado é RJ ou SP?
+salario > 1500 && sexo != 'M'     //    O salario é acima de 1500 e não é homem?
+
+
+                        Operador Ternario
+
+                Pega um teste logico e responde se é ou não É
+                 
+                            teste ? 'é'  : 'não é'
+EX:
+var idade = 15
+idade > 16 ? 's' : 'n'
+n
+
+EX: Voce pode fazer uma variavel  com uma varival tbm
+var salario = 2000
+var aumento = salario * 50 / 100 + salario ? 's' : 'n' 

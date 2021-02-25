@@ -1,0 +1,11 @@
+Aqui é pra simular tipo a formatação de dicionario por Exemplo
+
+<dl>: dicionario lista
+<dt>: titulo
+<dd>: descrição
+
+
+Exemplo:
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de conteudo do site</dd>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navagador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem Flexivel" >
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- Colocando musiquinha no site :D -->
+    <audio src="media/Movin' Up - Dan Lebowitz.mp3" controls autoplay></audio>
+
+    <!--Outra Forma de colocar audio que é 100% compativel nos navegadores-->
+    <audio preload="metadata" autoplay controls>
+        <source src='media/Phantom - Density & Time.mp3' type="audio/mpeg">
+        <source src='media/Phantom - Density & Time.ogg' type='audio/ogg'>
+        <source src='media/Phantom - Density & Time.wav' type='audio/wav'>
+        <p>Teu navegador não é compativel para escutar o batidão :( <a href="media/Phantom - Density & Time.mp3">Baixe aqui a musiquinha do verão </a> </p> 
+    </audio>
+    
+</body>
+</html>
+
+<!-- A tag <picture> é focada em concetrar varias fontes de imagens -->
+
+<!-- Já a tag <source> serve para fazer um certo dinamismo com as imagens,indicando qual a imagem tem o tamanho mais adequado para ser mostrado no site conforme da onde o usuário está navegando ,se é uma tela grande,média ou pequena. 
+Configure sempre em ordem crescente,da menor resolução. -->
+
+    <!-- em 'srcset="" você seleciona qual será a imagem que irá aparecer quando for configurar o source ajustando a tela  '  -->
+
+    <!-- em 'media="" ' troque para max-width-->
+
+<!-- Vamos analisar os principais atributos da tag <audio> antes de mais nada:
+    ‣ O atributo preload indica se o áudio será pré-carregado ou não e aceita três valores:
+        ๏ metadata : vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc)
+
+        ๏ none : não vai carregar absolutamente nada até que o usuário clique no botãoplay ou um script inicie a reprodução
+
+    ๏ auto (padrão) vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play
+
+‣ O atributo controls vai apresentar o player na tela. Caso não seja colocado na tag <audio>, o controle será transparente e o usuário não poderá interagir com ele.
+
+‣ O atributo autoplay, quando inserido, vai iniciar a reprodução do áudio assim quea página for carregada.
+
+‣ O atributo loop vai fazer com que o áudio seja repetido eternamente assim que terminar a sua reprodução. -->

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background:  rgb(94, 176, 231);
+            color : rgb(145, 22, 22);
+            
+        }
+        h1{
+            color:white;
+            font: normal 20pt Flanella;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="teste">Olha a Pamonha!!</h1>
+    <div id='msg'>  <!---- Criei uma id pra facilitar quando eu tiver varias div no site  ---->
+        Clica em eu!
+    </div>
+    <p>Aprendendo a usar o <strong>DOM</strong>!!
+    </p>
+    <p>Chatuba de <small>Mesquita</small></p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]         //Escolheu o paragrafo pra editar,que no caso foi o 0,o primeiro 
+        window.document.write('Está escrito assim : '+ p1.innerText) // Adicionou um texto e copiou o paragrafo escolhido
+
+        var p2 = window.document.getElementsByTagName('p')[1]
+
+        var d = window.document.getElementById('msg') //selecionei div com esse id
+
+        
+        d.style.background = 'red'
+        d.innerText='Aperta logo!'
+        
+        window.document.write(p2.innerText)                                  //Copia o texto sem formatação
+
+        window.document.write(p1.innerHTML)                                //Copia com a formatação toda (se ta em negrito ou subilinhado etc)
+        
+        var corpo = window.document.body
+        var p5 = window.document.getElementById('teste')
+        window.document.write('Está escrito assim : ' + p5.innerHTML)
+        corpo.style.color ='white'
+        corpo.style.background = 'pink'
+    </script>
+</body>
+</html>

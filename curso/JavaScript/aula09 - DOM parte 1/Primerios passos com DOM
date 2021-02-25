@@ -1,0 +1,31 @@
+DOM é um conjunto de objetodos que permite operar no seu site mesmo  e ele n roda no  node
+
+                      Exemplo de Arvore  DOM
+ 
+                        window : é a origem 
+                   /         |         \
+                  /          |          \
+            location     document     history
+                            |
+                            |
+                           html
+                        /         \
+                       /           \
+                     head            body      
+                    /   |         /  |  \  \
+                   /    |        h1  p  p  div
+                 meta  title            |
+                                       strong
+
+
+                        Tipos de Seleção
+
+Por marca : getElementsByTagName()
+Por ID :    getElenentsById()        usa ponto .
+Por Nome :  getElenentsByName()      
+Por Classe :getElenentsByClasseName() usa #
+Por Seletor:querySelector()   ou querySelectorAll()   (plural)  - Mais atualizada
+
+    Selecionar div é com ID usa . 
+    Exemplo:
+    var d = window.document.querySelector('div.msg')
